@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>My Mini-Hackathon Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather">
+            <div class="location">
+                <h1 class="location__timezone">Timezone</h1>
+                <p>Current Weather</p>
+            </div>
+
+            <div class="temperature">
+                <h2 class="temperature__degree">N/A</h2>
+                <div class="temperature__lh">
+                    <p class="temperature__high">high/</p>
+                    <p class="temperature__low">low</p>
+                </div>
+                <div class="temperature__description">N/A</div>
+            </div>
+        </div>
+
+        <div class="searchCity">
+            <input type="text" class="searchBox" placeholder="Search City">
+        </div>
+
+        <div class="covid19">
+            <h2 class="covid19__title">COVID-19 Daily Summary</h2>
+            <div class="covid19-container">
+                <div class="covid19-card">
+                    <h4 class="covid19-card__title">Global</h4>
+                    <div class="covid19-data-container">
+                        <p class="covid19-card__newConfirmed">New Confirmed: N/A</p>
+                        <p class="covid19-card__TotalConfirmed"> Total Confirmed: N/A</p>
+                        <p class="covid19-card__TotalDeaths"> Total Deaths: N/A</p>
+                    </div>
+                </div>
+
+                <div class="covid19-card">
+                    <h4 class="covid19-card__title">Canada</h4>
+                    <div class="covid19-data-container">
+                        <p class="covid19-card__newConfirmed-ca">New Confirmed: N/A</p>
+                        <p class="covid19-card__TotalConfirmed-ca"> Total Confirmed: N/A</p>
+                        <p class="covid19-card__TotalDeaths-ca"> Total Deaths: N/A</p>
+                    </div>
+                </div>
+
+                <div class="covid19-card">
+                    <h4 class="covid19-card__title">United States</h4>
+                    <div class="covid19-data-container">
+                        <p class="covid19-card__newConfirmed-us">New Confirmed: N/A</p>
+                        <p class="covid19-card__TotalConfirmed-us"> Total Confirmed: N/A</p>
+                        <p class="covid19-card__TotalDeaths-us"> Total Deaths: N/A</p>
+                    </div>
+                </div>
+
+                <div class="lastUpdate">
+                    <p class="lastUpdateTime">Last Update: </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="quotes">
+            <p class="newQuotes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, possimus?</p>
+            <div class="QuotesBtn">
+                <button onclick="genQuotes()">New Quotes</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgba(64, 82, 109, 0.8);
+    height: 100vh;
+}
+
+.container {
+    //height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.weather {
+    width: 60%;
+    height: 30%;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 10px;
+    .location {
+        text-align: center;
+        margin: 20px;
+    }
+    .temperature {
+        text-align: center;
+        &__lh {
+            display: flex;
+            justify-content: center;
+        }
+        &__description {
+            margin: 20px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.searchCity {
+    padding: 10px;
+    input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.covid19 {
+    width: 80%;
+    &__title {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .covid19-card {
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px auto;
+        .covid19-data-container {
+            padding: 5px;
+            // display: flex;
+            // justify-content: space-between;
+            text-align: center;
+        }
+    }
+}
+
+.quotes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 80%;
+    height: 100px;
+    button {
+        margin-top: 10px;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
